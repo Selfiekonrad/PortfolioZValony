@@ -1,32 +1,66 @@
-
-
 .column-container {
-    display: flex; /* Flexbox for column layout */
+    display: flex; /* Use flexbox to layout the container as columns (flex items) */
+    height: 100vh; /* Make the container take the full height of the viewport */
 }
 
+.vertical-separator {
+    border-left: 2px solid lightgray; /* Add a vertical separator with a light gray border */
+    align-self: center; /* Center the separator vertically within the flex container */
+    margin: 10px; /* Add spacing around the separator */
+    height: 95%; /* Set the height of the separator to 95% of its parent container */
+}
 
 /* Left column styles */
 .column-left {
-    width: 25%;
-}
-
-/* Right column styles */
-.column-right {
-    width: 75%;
+    width: 200px; /* Fix the width of the left column */
+    height: 100vh; /* Ensure the left column also spans the full height of the viewport */
+    position: relative; /* Set a relative position to enable absolutely positioned child elements */
 }
 
 /* Profile image styles */
 .profile-picture {
-    border-radius: 100%; /* Make the image circular */
-    display: block;
-    margin: 0 auto; /* Center image horizontally */
+    border-radius: 100%; /* Make the image circular by setting a 100% border radius */
+    display: block; /* Make the image behave as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
-/* settings button styles */
+/* Settings button styles */
 .settings-button {
-    text-decoration: none;
-    font-size: 30px;
-    position: absolute; /* Position relative to the nearest positioned ancestor */
-    top: 10px;
-    left: 10px;
+    text-decoration: none; /* Remove the underline from the link */
+    font-size: 25px; /* Set a larger font size for the button icon or text */
+    position: absolute; /* Position the button relative to its nearest positioned ancestor (column-left) */
+    top: 7px; /* Place the button 7px from the top of its container */
+    left: 7px; /* Place the button 7px from the left of its container */
+}
+
+.username {
+    text-align: center; /* Center the username text horizontally */
+}
+
+.user-navigation-buttons-left-column {
+    text-decoration: none; /* Remove the underline from the navigation links */
+    color: black; /* Set the link color to black */
+    display: block; /* Make each navigation link take up the full width of the container */
+    margin-bottom: -7px; /* Add negative margin to reduce spacing between the links */
+}
+
+.navigation-container {
+    padding-top: 10px; /* Add spacing above the navigation container */
+    padding-left: 15px; /* Add spacing to the left of the navigation links */
+}
+
+/* Log-out button styles */
+.log-out-button {
+    position: absolute; /* Position the button absolutely relative to the column-left container */
+    bottom: 20px; /* Place the button 20px from the bottom of the column */
+    left: 0; /* Align the button to the left edge of its parent container */
+    width: 100%; /* Make the button span the entire width of its parent container */
+    transform: none; /* Disable any transformation (not needed with full width) */
+    text-decoration: none; /* Remove the underline from the button text */
+    color: black; /* Set the button text color to black */
+    text-align: center; /* Center the text horizontally inside the button */
+    background-color: #EEEEEE; /* Set the button background to light gray */
+    border-radius: 25px; /* Add rounded corners with a radius of 25px */
+    padding: 10px 0; /* Add vertical padding to increase the button's height */
+    box-sizing: border-box; /* Include padding and border in the button's width/height calculations */
 }
