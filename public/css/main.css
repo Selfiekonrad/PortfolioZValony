@@ -64,3 +64,69 @@
     padding: 10px 0; /* Add vertical padding to increase the button's height */
     box-sizing: border-box; /* Include padding and border in the button's width/height calculations */
 }
+
+.project-overview{
+    right: 30px;
+    left: 30px;
+    top: 30px;
+    border-radius: 20px;
+    background-color: #9fcdff;
+    color: #005cbf;
+    width: 900px;
+    height: 300px;
+    align-self: center;
+
+}
+
+.inside-project-overview{
+    display: flex;
+}
+
+.project-picture{
+    border-radius: 10px;
+    display: block;
+    width: 200px;
+    margin: 20px;
+    justify-self: end;
+}
+
+.project-title{
+    margin: 10px;
+}
+
+.project-column-left{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 80%;
+
+}
+
+.project-head{
+    display: flex;
+}
+
+.project-programming-language-box{
+    display: flex;
+    position: relative;
+
+
+}
+
+.project-language{
+    bottom: 10px;
+
+    width: fit-content;
+    transform: none;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+
+    top: 7px;
+    left: 7px;
+}
