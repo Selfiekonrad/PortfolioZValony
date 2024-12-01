@@ -4,7 +4,7 @@
 }
 
 .vertical-separator {
-    border-left: 2px solid lightgray; /* Add a vertical separator with a light gray border */
+    border-left: 2px solid #DBDBDB; /* Add a vertical separator with a light gray border */
     align-self: center; /* Center the separator vertically within the flex container */
     margin: 10px; /* Add spacing around the separator */
     height: 95%; /* Set the height of the separator to 95% of its parent container */
@@ -12,36 +12,9 @@
 
 /* Left column styles */
 .column-left {
-    width: 200px; /* Fix the width of the left column */
+    width: 220px; /* Fix the width of the left column */
     height: 100vh; /* Ensure the left column also spans the full height of the viewport */
     position: relative; /* Set a relative position to enable absolutely positioned child elements */
-}
-
-/* Profile image styles */
-.profile-picture {
-    border-radius: 100%; /* Make the image circular by setting a 100% border radius */
-    display: block; /* Make the image behave as a block-level element */
-    margin: 0 auto; /* Center the image horizontally */
-}
-
-/* Settings button styles */
-.settings-button {
-    text-decoration: none; /* Remove the underline from the link */
-    font-size: 25px; /* Set a larger font size for the button icon or text */
-    position: absolute; /* Position the button relative to its nearest positioned ancestor (column-left) */
-    top: 7px; /* Place the button 7px from the top of its container */
-    left: 7px; /* Place the button 7px from the left of its container */
-}
-
-.username {
-    text-align: center; /* Center the username text horizontally */
-}
-
-.user-navigation-buttons-left-column {
-    text-decoration: none; /* Remove the underline from the navigation links */
-    color: black; /* Set the link color to black */
-    display: block; /* Make each navigation link take up the full width of the container */
-    margin-bottom: -7px; /* Add negative margin to reduce spacing between the links */
 }
 
 .navigation-container {
@@ -204,3 +177,4 @@
     margin-bottom: 10px;
     font-size: 19px;
 }
+
