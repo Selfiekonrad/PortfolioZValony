@@ -4,7 +4,7 @@
 }
 
 .vertical-separator {
-    border-left: 2px solid lightgray; /* Add a vertical separator with a light gray border */
+    border-left: 2px solid #DBDBDB; /* Add a vertical separator with a light gray border */
     align-self: center; /* Center the separator vertically within the flex container */
     margin: 10px; /* Add spacing around the separator */
     height: 95%; /* Set the height of the separator to 95% of its parent container */
@@ -12,7 +12,7 @@
 
 /* Left column styles */
 .column-left {
-    width: 200px; /* Fix the width of the left column */
+    width: 220px; /* Fix the width of the left column */
     height: 100vh; /* Ensure the left column also spans the full height of the viewport */
     position: relative; /* Set a relative position to enable absolutely positioned child elements */
 }
