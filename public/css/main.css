@@ -38,70 +38,72 @@
     box-sizing: border-box; /* Include padding and border in the button's width/height calculations */
 }
 
-.project-overview{
-    right: 30px;
-    left: 30px;
-    top: 30px;
+
+
+.project-overview {
+    margin: 30px auto;
     border-radius: 20px;
-    background-color: #9fcdff;
-    color: #005cbf;
-    width: 900px;
-    height: 300px;
-    align-self: center;
-
-}
-
-.inside-project-overview{
-    display: flex;
-}
-
-.project-picture{
-    border-radius: 10px;
-    display: block;
-    width: 200px;
-    margin: 20px;
-    justify-self: end;
-}
-
-.project-title{
-    margin: 10px;
-}
-
-.project-column-left{
+    background-color: #EEEEEE;
+    width: 800px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    width: 80%;
-
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.project-head{
+.inside-project-overview {
     display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-.project-programming-language-box{
+.project-column-left {
     display: flex;
-    position: relative;
-
-
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
 }
 
-.project-language{
-    bottom: 10px;
+.project-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    width: fit-content;
-    transform: none;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    background-color: #EEEEEE;
+.project-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.project-programming-language-box {
+    display: flex;
+    gap: 10px;
+}
+
+.project-language {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
     border-radius: 15px;
-    box-sizing: border-box;
-    margin: 5px;
-    padding: 5px;
-    top: 7px;
-    left: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
+
+.project-picture {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
 
 .sign-up-button{
     align-self: flex-end;
