@@ -5,7 +5,6 @@
 
 .vertical-separator {
     border-left: 2px solid #DBDBDB; /* Add a vertical separator with a light gray border */
-    align-self: center; /* Center the separator vertically within the flex container */
     margin: 10px; /* Add spacing around the separator */
     height: 95%; /* Set the height of the separator to 95% of its parent container */
 }
@@ -14,7 +13,7 @@
 .column-left {
     width: 220px; /* Fix the width of the left column */
     height: 100vh; /* Ensure the left column also spans the full height of the viewport */
-    position: relative; /* Set a relative position to enable absolutely positioned child elements */
+
 }
 
 .navigation-container {
@@ -22,35 +21,29 @@
     padding-left: 15px; /* Add spacing to the left of the navigation links */
 }
 
-/* Log-out button styles */
-.log-out-button {
-    position: absolute; /* Position the button absolutely relative to the column-left container */
-    bottom: 20px; /* Place the button 20px from the bottom of the column */
-    left: 0; /* Align the button to the left edge of its parent container */
-    width: 100%; /* Make the button span the entire width of its parent container */
-    transform: none; /* Disable any transformation (not needed with full width) */
-    text-decoration: none; /* Remove the underline from the button text */
-    color: black; /* Set the button text color to black */
-    text-align: center; /* Center the text horizontally inside the button */
-    background-color: #EEEEEE; /* Set the button background to light gray */
-    border-radius: 25px; /* Add rounded corners with a radius of 25px */
-    padding: 10px 0; /* Add vertical padding to increase the button's height */
-    box-sizing: border-box; /* Include padding and border in the button's width/height calculations */
+.column-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
 }
 
 
-
 .project-overview {
-    margin: 30px auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
     border-radius: 20px;
     background-color: #EEEEEE;
-    width: 800px;
+    min-width: 620px;
+    max-width: 800px;
+    min-height: 260px;
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .inside-project-overview {
@@ -119,9 +112,6 @@
     height: 5%;
     width: 100%;
     margin: 8%;
-}
-
-.sign-up-field-text-space{
 }
 
 .sign-up-field-name{
